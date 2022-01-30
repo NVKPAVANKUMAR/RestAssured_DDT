@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.restassured.listeners.ITestListenerClass"/>
+        <listener class-name="com.restassured.listeners.AnnotationTransformerClass"/>
+    </listeners>
+    <test name="Test" preserve-order="true" thread-count="2" parallel="methods">
+        <classes>
+            <class name="com.restassured.testcases.GetRequestsTests"/>
+            <!--            <class name="com.restassured.testcases.PostRequestsTests"/>-->
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,8 @@
+.idea
+.settings
+extent-reports
+output
+test-output
+.classpath
+.project
+RestAssuredFramework.iml
